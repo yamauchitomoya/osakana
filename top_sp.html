@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120438820-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-120438820-1');
+    </script>
+    <title>つがる日本海お魚大漁まつり 2018</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="つがる日本海お魚大漁まつり,漁業,イベント,青森,津軽">
+    <meta name="description" content="2018年6月23日（土）開催　開催場所：新深浦町漁業協同組合 北金ヶ沢漁港荷捌所　荒海へ挑む漁師、浜を守る女たち、北金ヶ沢へ集結！！無料振る舞い・販売・なりきり漁師体験などイベントも大漁！！">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="prerender" href="main.html">
+    <META http-equiv="Refresh" content="12;URL=main.html">
+</head>
+<style type="text/css" media="screen">
+img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 70vh;
+    width: auto\9;
+    /* ie8 */
+    margin: 0 auto;
+    padding-top: 5%;
+}
+.bg-pink {
+    background: url('images/line.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+}
+body{
+    height: 100%;
+    margin: 0;
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+
+<body>
+    <header id="header" class="bg-pink">
+    </header>
+    <section class="fade slider">
+        <div>
+            <img src="images/title_1.png">
+        </div>
+        <div>
+            <img src="images/title_2.png">
+        </div>
+        <div>
+            <img src="images/title_3.png">
+        </div>
+        <div>
+            <img src="images/logo.png">
+        </div>
+        <div>
+            <img src="images/white.png" width="100%">
+        </div>
+    </section>
+    <footer id="footer" class="bg-pink">
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    var $slider = $('.slider'),
+        contentLength = $slider.children().length - 1; // .slider直下の要素の数を取得。0から始まるインデックス番号と合致させる為に1引く。この数は最後のスライド番号と同じになります。
+
+    $slider.slick({
+        slidesToShow: 1,
+        autoplay: true,
+        pauseOnHover: false,
+        autoplaySpeed: 2000,
+        arrows: false,
+        centerMode: true,
+        fade: true
+    }).on('afterChange', function() {
+        // 現在のスライド番号（最初は0）を取得。
+        var currentSlide = $slider.slick('slickCurrentSlide');
+
+        // 最後のスライド番号と一致したら止める。
+        if (currentSlide === contentLength) {
+            $slider.slick('slickPause');
+        }
+    });
+    </script>
+</body>
+
+</html>
